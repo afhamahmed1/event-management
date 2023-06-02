@@ -67,6 +67,10 @@ a{display:block;}
 img{display:block;}
 img{max-width:100%;}
 .clear{clear:both;}
+
+.logo{
+	max-width: 15%;
+}
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	 TYPOGRAPHY 
@@ -372,12 +376,12 @@ a:focus {
 .header-inner{}
 
 .logo{ position: relative;
-    top: 50%;
-    transform: translateY(-50%);margin-top:-15px;}
-.smallogo img{margin:0 auto;}
+    top: 20%;
+    transform: translateY(-20%);margin-top:-15px;}
+.smallogo img{margin:0 auto; display: block; width: 60px;}
 .nav-height2 .logo{margin-top:22px;}
 .logo a{display:inline-block;}
-.logo a img{margin:0 auto;}
+.logo a img{margin:0 auto; width: 60%;}
 
 
 
@@ -387,7 +391,7 @@ a:focus {
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
-.top-toolbar{padding:30px 0 30px;text-align:right;}
+.top-toolbar{padding:0px 0 30px;text-align:right;}
 .top-toolbar .social-content{display:inline-block;}
 .top-toolbar .social-content ul.social-links{text-align:left;}
 .top-toolbar .social-content ul.social-links li{
@@ -441,7 +445,8 @@ a.toolbar-new-listing{
 */
 
 .static-section{
-    background-image: url('../images/slider/static-1.jpg');
+    background-image: url('../images/slider/static1.jpg');
+	
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -458,7 +463,7 @@ a.toolbar-new-listing{
 	transform:translateY(-50%);
 	margin-top:50px;
 }
-.static-header-text h1{font-size:80px;line-height:1;font-weight:700;margin-bottom:10px;}
+.static-header-text h1{font-size:80px;line-height:1;font-weight:700;margin-bottom:10px; text-align: left;}
 .static-header-text h1 span{font-size:inherit;line-height:1;text-transform:inherit;font-weight:inherit;}
 .static-section h4,
 .static-section h2{letter-spacing:2px;line-height:1;}
@@ -1547,7 +1552,7 @@ a.toolbar-new-listing{
 .footer-bottom{padding-top:20px;}
 .footer-main{}
 .footer-logo{}
-.footer-logo a{}
+.footer-logo a{ width: 30%;}
 .footer-logo a img{width:auto;} 
 .footer-intro{margin-top:15px;}
 .footer-intro p{text-align:left;margin-bottom:10px;max-width:285px;}
@@ -1578,9 +1583,11 @@ a.toolbar-new-listing{
 
 .footer-flikr-widget{}
 .footer-flikr-widget ul.flikr-list{margin-left:-7px;margin-right:-7px;}
-.footer-flikr-widget ul.flikr-list li{width:33.3333%;padding:0 7px; margin-bottom:14px;float:left;}
+.footer-flikr-widget ul.flikr-list li{width:15%;padding:0 7px; margin-bottom:14px;float:left;}
 
-
+.Quick-links li a{text-align: left;}
+.flikr-list li a{font-size: 20px;}
+.footer-flikr-widget p{ text-align: left;}
 
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
