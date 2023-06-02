@@ -328,15 +328,15 @@ a:focus {
 	transition: opacity 0.35s, transform 0.35s;
 }
 .hover-overlay-inner::before {
-	border-top: 1px solid #EBC131;
-	border-bottom: 1px solid #EBC131;
+	border-top: 1px solid #78c6a2;
+	border-bottom: 1px solid #78c6a2;
 	-webkit-transform: scale(0,1);
 	transform: scale(0,1);
 }
 
 .hover-overlay-inner::after {
-	border-right: 1px solid #EBC131;
-	border-left: 1px solid #EBC131;
+	border-right: 1px solid #78c6a2;
+	border-left: 1px solid #78c6a2;
 	-webkit-transform: scale(1,0);
 	transform: scale(1,0);
 }
@@ -445,7 +445,8 @@ a.toolbar-new-listing{
 */
 
 .static-section{
-    background-image: url('../images/slider/static1.jpg');
+    background: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)),
+	url('../images/slider/static1.jpg');
 	
     background-size: cover;
     background-repeat: no-repeat;
@@ -999,11 +1000,43 @@ a.toolbar-new-listing{
 .callout-section a{min-width:190px;padding:15px 10px;border-radius:25px;text-transform:uppercase;display:inline-block;margin-left:20px;}
 .callout-section a:first-child{margin-left:0;}
 
+
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	Profile
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.Profile-form form{
+	background-color: rgb(240, 240, 240);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.Profile-form input, select{
+	width: 100%;
+	margin: 5px 0 25px 0;
+	padding: 10px;
+	border: 2px solid #78c6a2;
+	border-radius: 4px;
+}
+
+.Profile-form img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	cursor: pointer;
+	margin: 10px 0;
+	border: 2px solid #5ba281;
+	margin: 5px 0 25px 0;
+}
+
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	PRICING PLAN STYLING
 --------------------------------------------------------------------------------------------------------------------------------
 */
+
 
 .pricing{margin-bottom:30px;position:relative;padding:10px;}
 .pricing-inner{
@@ -1700,7 +1733,7 @@ a.toolbar-new-listing{
 	border-radius:3px;
 }
 .owl-prev:hover,
-.owl-next:hover{background:#ebc131;color:#333;}
+.owl-next:hover{background:rgb(120, 198, 162) ;color:#fdfdfd;}
 .owl-controls .owl-dots{text-align:center;}
 .owl-controls .owl-dots .owl-dot{
 	width:30px;
