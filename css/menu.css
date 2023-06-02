@@ -24,8 +24,7 @@
 .wsmenu-list > li{
 	text-align:center;
 	display: table-cell;
-	padding-bottom:20px;
-	padding-left:20px;
+	padding-bottom: 20px;
 	}
 	
 .wsmenu-list li:first-child a{
@@ -51,7 +50,7 @@
 
 .wsmenu-list > li > a{
 	display:block;
-	color:#fff;
+	color:#e5e5e5;
 	padding:8px 15px; line-height:1;
 	text-decoration:none;
 	position:relative;
@@ -62,7 +61,7 @@
 	}
 .wsmenu-list > li:last-child a{
 	display:block;
-	color:#333 !important;
+	color:#efefef;
 	padding:20px 0 20px 21px; line-height:1;
 	text-decoration:none;
 	position:relative;
@@ -811,7 +810,7 @@
 .smallogo{ width:100%; display:block; text-align:center; padding-top:9px; position:fixed; 
 z-index:100;
 width:100%;
-	height:52px;
+	height:70px;
 	background: #262626;
 	background: -moz-linear-gradient(top, #262626 0, #1c1c1c 50%, #262626 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #262626), color-stop(50%, #1c1c1c), color-stop(100%, #262626));
@@ -826,7 +825,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#262626', endCo
 
 .animated-arrow{
 	cursor:pointer;
-	padding:13px 35px 16px 0px;
+	padding:25px 35px 16px 0px;
 	margin:10px 0 0 15px;
 	z-index:10000;
 	}

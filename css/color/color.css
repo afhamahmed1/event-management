@@ -211,7 +211,7 @@ body{background:#F9F9F9;}
 2# MAIN NAVBAR
 --------------------------------------------------------------------------------------------------------------------------------
 */
-.nav-wrapper{}
+.nav-wrapper{ backdrop-filter: blur(7px);}
 .wsmenu-list > li > a.active {
     text-decoration: none;
 	color:#ebc131;
