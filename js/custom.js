@@ -188,13 +188,23 @@ FUNFACTSs
 	  const pass = $('#user_pass').val();
 	  // Add more form fields as needed
 
-	  if(!(name=="admin" && pass=="pass")){
-		showError($('#user_name'),'Please enter correct username or password');
-		
-		return
-	  }else {
-		removeError($('#user_name'));
-	  }
+	  const usersJSON = localStorage.getItem('users');
+		if (!usersJSON) {
+		showError($('#user_name'), 'No users registered. Please sign up.');
+		return;
+		}
+
+		// Parse the stored user data JSON
+		const users = JSON.parse(usersJSON);
+
+		// Find the user with the entered username
+		const user = users.find(user => user.name === name);
+
+		// Check if the user exists and the password matches
+		if (!user || user.password !== pass) {
+		showError($('#user_name'), 'Invalid username or password.');
+		return;
+		}
 	  
   
 	  // Create an object to store the form data
@@ -209,7 +219,10 @@ FUNFACTSs
   
 	  // Save the form data to localStorage
 	  localStorage.setItem('login', formDataJSON);
-  
+	  
+		// Clear the form fields
+		$('#login')[0].reset();
+
 	  window.location.replace("/");
 	});
   });
@@ -217,8 +230,6 @@ FUNFACTSs
   $(document).ready(function() {
 	const loggedInItems = $('.loggedin');
 	const loginRegisterItem = $('#login-register');
-	const loginButton = $('#login-button');
-	const signupButton = $('#signup-button');
 	const logoutButton = $('#logout-button');
   
 	// Check if user is logged in
@@ -233,7 +244,86 @@ FUNFACTSs
 	  loggedInItems.hide();
 	  loginRegisterItem.show();
 	  logoutButton.hide();
+
+		const sPath = window.location.pathname;
+		const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+		const allowedURI = ["index.html", "Directory.html", "login.html", "sign-up.html", "Terms-of-Service.html", "Privacy-Policy.html" ,""]
+		
+		if(allowedURI.includes(sPage)){
+			
+		}
+		else{
+			window.location.replace("/");
+		}
 	}
+
+	$(document).ready(function() {
+		// Add a submit event handler to the signup form
+		$('#sign-up').submit(function(e) {
+		  e.preventDefault(); // Prevent the form from being submitted
+		  
+		  // Retrieve the form values
+		  const name = $('#user_name').val();
+		  const email = $('#user_email').val();
+		  const password = $('#user_password').val();
+		  const confirmPassword = $('#user_confirm_password').val();
+		  // Add more form fields as needed
+
+		  // Retrieve the existing user data from localStorage
+		  let users = localStorage.getItem('users');
+		  if (!users) {
+			// If no users exist, initialize an empty array
+			users = [];
+		  } else {
+			// Parse the existing user data from JSON
+			users = JSON.parse(users);
+		  }
+	  
+		  // Check if the username is already taken
+		  if (users.find(user => user.name === name)) {
+			showError($('#user_name'), 'Username already exists. Please choose a different username.');
+			return;
+		  }
+	  
+		  // Perform validation
+		  if (!(name && email && password && confirmPassword)) {
+			showError($('#user_name'), 'Please fill in all the required fields.');
+			return;
+		  }
+	  
+		  if (password !== confirmPassword) {
+			showError($('#user_confirm_password'), 'Password and confirm password do not match.');
+			return;
+		  }
+	  
+		  
+	  
+		  // Create a new user object
+		  const newUser = {
+			name: name,
+			email: email,
+			password: password,
+			// Add more properties as needed
+		  };
+	  
+		  // Add the new user to the existing user data
+		  users.push(newUser);
+	  
+		  // Convert the updated user data to a JSON string
+		  const usersJSON = JSON.stringify(users);
+	  
+		  // Save the updated user data to localStorage
+		  localStorage.setItem('users', usersJSON);
+	  
+		  // Clear the form fields
+		  $('#sign-up')[0].reset();
+		  // Save the form data to localStorage
+		  localStorage.setItem('login', usersJSON);
+	  
+		  window.location.replace("/");
+		});
+	  });
+	  
   
 	// Logout functionality
 	logoutButton.click(function(e) {
@@ -248,6 +338,8 @@ FUNFACTSs
 	  logoutButton.hide();
 	});
   });
+
+  
   
   
   
