@@ -22,7 +22,16 @@ body{background:#F9F9F9;}
 	PAGE TITLE 
 --------------------------------------------------------------------------------------------------------------------------------
 */
-.page-title-wrap{background:url(../../images/page-title-bg.jpg) no-repeat;}
+.page-title-wrap{
+	/* background:url(../../images/page-title-bg.jpg) no-repeat; */
+
+	background: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)),
+	url('../images/mountain.jpg') no-repeat;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+}
+
 .pagetitle-text{}
 .pagetitle-text h4{}
 .pagetitle-breadcrumb{}

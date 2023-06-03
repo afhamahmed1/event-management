@@ -359,7 +359,7 @@ a:focus {
 	PAGE TITLE 
 --------------------------------------------------------------------------------------------------------------------------------
 */
-.page-title-wrap{padding:50px 0;}
+.page-title-wrap{padding:0px 0 0px 0;}
 .pagetitle-text{float:left;}
 .pagetitle-text h4{}
 .pagetitle-breadcrumb{float:right;}
@@ -371,7 +371,11 @@ a:focus {
 	HEADER 
 --------------------------------------------------------------------------------------------------------------------------------
 */
-.header{position:absolute;left:0;right:0;z-index:9999;}
+.header{position:relative;
+	/* left:0;
+	right:0;
+	z-index:9999; */
+}
 .header.solid{position:static;}
 .header-inner{}
 
@@ -381,7 +385,7 @@ a:focus {
 .smallogo img{margin:0 auto; display: block; width: 60px;}
 .nav-height2 .logo{margin-top:22px;}
 .logo a{display:inline-block;}
-.logo a img{margin:0 auto; width: 60%;}
+.logo a img{margin:25px auto 0; width: 5rem;}
 
 
 
@@ -1545,7 +1549,7 @@ Login
 
 /* contact form */
 
-.contact-form{}
+.contact-form{ padding: 20px; background-color:#f3f3f3; border-radius: 5px;}
 .contact-form input{margin-bottom:30px;width:100%;}
 .contact-form input[placeholder], .contact-form textarea[placeholder]{font-family:'Montserrat';padding:20px 40px;}
 .contact-form textarea{margin-bottom:30px;width:100%;}
@@ -1623,7 +1627,7 @@ Login
 .footer-main{}
 .footer-logo{}
 .footer-logo a{ width: 30%;}
-.footer-logo a img{width:auto;} 
+.footer-logo a img{width: 50px;} 
 .footer-intro{margin-top:15px;}
 .footer-intro p{text-align:left;margin-bottom:10px;max-width:285px;}
 .footer-intro a{text-align:left;text-transform:uppercase;}
