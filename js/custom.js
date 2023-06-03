@@ -152,3 +152,102 @@ FUNFACTSs
     });
     $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
   });
+
+  function showError(element, message) {
+    // Remove any existing error message
+    removeError(element);
+
+    // Create a new error message element
+    const errorMessage = $('<div class="error text-danger"></div>').text(message);
+
+    // Insert the error message after the input field
+    element.after(errorMessage);
+
+    // Add red border to the input field
+    element.addClass('border-danger');
+  }
+
+  // Function to remove the error message and red border
+  function removeError(element) {
+    // Remove any existing error message
+    element.next('.error').remove();
+	element.next('.text-danger').remove();
+
+    // Remove red border from the input field
+    element.removeClass('border-danger');
+  }
+
+
+  $(document).ready(function() {
+	// Add a submit event handler to the form
+	$('#login').submit(function(e) {
+	  e.preventDefault(); // Prevent the form from being submitted
+  
+	  // Retrieve the form values
+	  const name = $('#user_name').val();
+	  const pass = $('#user_pass').val();
+	  // Add more form fields as needed
+
+	  if(!(name=="admin" && pass=="pass")){
+		showError($('#user_name'),'Please enter correct username or password');
+		
+		return
+	  }else {
+		removeError($('#user_name'));
+	  }
+	  
+  
+	  // Create an object to store the form data
+	  const formData = {
+		name: name,
+		pass: pass,
+		// Add more properties as needed
+	  };
+  
+	  // Convert the form data to a JSON string
+	  const formDataJSON = JSON.stringify(formData);
+  
+	  // Save the form data to localStorage
+	  localStorage.setItem('login', formDataJSON);
+  
+	  window.location.replace("/");
+	});
+  });
+  
+  $(document).ready(function() {
+	const loggedInItems = $('.loggedin');
+	const loginRegisterItem = $('#login-register');
+	const loginButton = $('#login-button');
+	const signupButton = $('#signup-button');
+	const logoutButton = $('#logout-button');
+  
+	// Check if user is logged in
+	const userData = localStorage.getItem('login');
+	if (userData) {
+	  // User is logged in
+	  loggedInItems.show();
+	  loginRegisterItem.hide();
+	  logoutButton.show();
+	} else {
+	  // User is not logged in
+	  loggedInItems.hide();
+	  loginRegisterItem.show();
+	  logoutButton.hide();
+	}
+  
+	// Logout functionality
+	logoutButton.click(function(e) {
+	  e.preventDefault();
+  
+	  // Remove user data from localStorage
+	  localStorage.removeItem('login');
+  
+	  // Show login and sign up options, hide logout option
+	  loggedInItems.remove();
+	  loginRegisterItem.show();
+	  logoutButton.hide();
+	});
+  });
+  
+  
+  
