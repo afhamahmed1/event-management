@@ -147,73 +147,99 @@
 			<div class="page-title-wrap padding-top-30 padding-bottom-30 margin-bottom-100"><!-- section title -->
 				<div class="container">
 					<div class="pagetitle-text">
-						<h3 class="white text-center">Interests</h3>
+						<h3 class="white">Event detail</h3>
 					</div>
 				</div>
 			</div><!-- section title end -->
-		<!--================================CATEGOTY SECTION==========================================-->
-		<section class="categories-section ">
-			<div class="container"><!-- section container -->
-				<div class="row category-section-wrap cat-style-2">
-					<div class="col-md-12 col-sm-12 col-xs-12">
+		<!--================================Event-detail==========================================-->
+	
+        <section class="event-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                        <img src="images/Event-details.jpg" alt="">
+                    </div>
 
-						<form style="display: flex; justify-content: end;">
-								<input type="text" placeholder="Search" class="p-3 mb-5 rounded border-0 justify-content-end" style="background-color: #f2f2f3;">
-							    <button class="p-3 mb-5 border-0 justify-content-end" style="background-color: #78c6a2;">Search</button>
-						</form>
-					</div>
-				</div>
-			</div><!-- section container end -->
-		</section>
-		<section class="categories-section ">
-			<div class="container"><!-- section container -->
-				<div class="row category-section-wrap cat-style-2">
-					<div class="col-md-12 col-sm-12 col-xs-12"><!-- category column -->
-						<div class="cat-wrap shadow-1">
-							<h5>Parent Node </h5>
-							
-						</div>
-					</div><!-- category column end -->
-					
-				</div>
-			</div><!-- section container end -->
-		</section>
-		<section class="categories-section ">
-			<div class="container"><!-- section container -->
-				<div class="row category-section-wrap cat-style-2">
-					<div class="col-md-12 col-sm-12 col-xs-12"><!-- category column -->
-						<div class="cat-wrap shadow-1">
-							<h5>Current Node </h5>
-							
-						</div>
-					</div><!-- category column end -->
-					
-				</div>
-			</div><!-- section container end -->
-		</section>
-		<section class="categories-section padding-bottom-40">
-			<div class="container"><!-- section container -->
-				<div class="row category-section-wrap cat-style-2">
-					<div class="col-md-12 col-sm-12 col-xs-12"><!-- category column -->
-						<div class="cat-wrap shadow-1">
-							<h5>Child Nodes</h5>
-							<div class="cat-list-wrap">
-								<ul class="cat-list">
-									<li><a href="#">activities <span>(4)</span></a></li>
-									<li><a href="#">Fitness <span>(2)</span></a></li>
-									<li><a href="#">Gym <span>(3)</span></a></li>
-									<li><a href="#">Hospitals & Clinics <span>(0)</span></a></li>
-									<li><a href="#">Parlours <span>(1)</span></a></li>
-									<li><a href="#">Others<span>(3)</span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div><!-- category column end -->
-					
-				</div>
-			</div><!-- section container end -->
-		</section>
-		
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                        <div class="event-discription">
+
+                        <h3>Event-details</h3>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita sed est iure. Delectus, necessitatibus? Distinctio ab eius suscipit? Ipsum, illum doloremque! Quas molestias aspernatur eligendi minima natus vitae voluptates velit officia odio delectus nihil, nulla magni, consectetur, laborum ipsa explicabo assumenda saepe fugiat voluptatem sint repellendus id commodi eaque. Distinctio blanditiis aspernatur pariatur quia facere tenetur reiciendis ullam debitis!</p>
+
+						<h5 class="flex-start mt-3">Event day</h5>
+						<p>Monday</p>
+
+						<h5 class="flex-start mt-3">Event time</h5>
+						<p>11:13pm   03/06/2023</p>
+
+
+                        <button class="mt-3 p-3 border-0" style="background-color: #78c6a2;" data-bs-toggle="modal" data-bs-target="#register-event">Register in event</button>
+
+
+
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register-event">
+                        Launch static backdrop modal
+                        </button> -->
+
+                        <div class="modal fade" id="register-event" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5>Register in Event</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+
+                                <form class="register-in-event">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <input style="background: #f3f3f3;" class="w-100 border-0 p-3 my-2" type="text" placeholder="Your name">
+                                        </div>
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <input style="background: #f3f3f3;" class="w-100 border-0 p-3 my-2" type="email" placeholder="Your Email">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <input style="background: #f3f3f3;" class="w-100 border-0 p-3 my-2" type="text" placeholder="Your address">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <input style="background: #f3f3f3;" class="w-100 border-0 p-3 my-2" type="text" placeholder="Your number">
+                                        </div>
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <button class="w-100 border-0 p-3 my-2" style="background-color: #78c6a2;" data-bs-dismiss="modal">Register in event</button>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+
+
+                             </div>
+                            </div>
+                         </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        
 		<!--================================ subscription ==========================================-->
 	
 		<!--================================ FOOTER AREA ==========================================-->

@@ -66,7 +66,7 @@
 		<div class="wsmenucontent overlapblackbg"></div>
 		<div class="wsmenuexpandermain slideRight">
 			<a id="navToggle" class="animated-arrow slideLeft"><span></span></a>
-			<a href="#" class="smallogo"><img class="logo" src="images/logo1.png" width="200" alt="" /></a>
+			<a href="#" class="smallogo"><img class="logo" src="images/logo2.png" width="200" alt="" /></a>
 		</div>
 		<!--================================HEADER==========================================-->
 		<div class="header">
@@ -101,7 +101,7 @@
 				</div><!--header toolbar end-->
 						<!--Main Menu HTML Code-->
 						<nav class="wsmenu slideLeft clearfix">
-							<div class="logo pull-left"><a href="index.html" title="Responsive Slide Menus"><img src="images/logo1.png" alt="" /></a></div>
+							<div class="logo pull-left"><a href="index.html" title="Responsive Slide Menus"><img src="images/logo2.png" alt="" /></a></div>
 							<ul class="mobile-sub wsmenu-list pull-right">
 								<li><a href="index.html" class="">Home</a>
 									<!-- <ul class="wsmenu-submenu">
@@ -160,11 +160,11 @@
 		
 		<!--================================CATEGORY SECTION ==========================================-->
 		
-				<section class="categories-section padding-bottom-70"><!-- content area column -->
+				<section class="categories-section padding-bottom-70">
 					<div class="container">
 						<div class="section-title-wrap shadow-1 bgwhite padding-bottom-30 padding-top-30 margin-bottom-50 margin-top-30"><!-- section title -->
 							<h5>Events</h5>
-						</div><!-- section title end -->
+						</div>
 						<div class="category-section-wrap cat-style-3 cat-slider clearfix">
 							<div class="main-wrap"><!-- category column -->
 								<div class="listing-item shadow-1 clearfix">
@@ -306,38 +306,58 @@
 
 							
 						</div>
-					</div><!--/container-->
+					</div>
 				</section>
 				
 
+<!--================================Check=box==========================================-->
 
-
-				<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-	Launch static backdrop modal
-  </button>
+			
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkbox-modal">
+				Launch static backdrop modal
+			</button>
   
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-		  ...
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-primary">Understood</button>
-		</div>
-	  </div>
-	</div>
-  </div>
+            
+
+			<div class="checkbox-modal modal fade" id="checkbox-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+
+					<div class="modal-header text-center">
+						<h4 class="modal-title">Custom Checkboxes</h4>
+					  </div>
+
+					<div class="modal-body">
+
+						<p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam obcaecati error aut explicabo voluptate tempore non, eligendi cum blanditiis ratione facere dolores sapiente sunt doloremque corporis iusto odit. Tenetur reprehenderit aspernatur dignissimos, suscipit maxime velit ex nihil minima voluptatem earum commodi rem voluptas expedita natus nesciunt magnam voluptatum omnis repellendus tempore voluptates vel quisquam obcaecati excepturi minus. Voluptas, quidem! Perferendis earum voluptates laborum libero ea natus vel debitis nam molestias repudiandae maxime autem adipisci aliquam pariatur facere, iusto inventore commodi ipsam mollitia nobis porro quam. Sed molestias debitis ullam eum neque recusandae explicabo, provident, blanditiis excepturi dolorum, id error repellendus!</p>
+
+
+						<form>
+
+							<div class="checks">
+								<input type="checkbox" required>
+								<a href="Terms-of-Service.html">Terms of Service</a>
+							</div>
+	
+							<div class="checks">
+								<input type="checkbox" required>
+								<a href="Privacy-Policy.html">Privacy-Policy</a>
+							</div>
+							
+						</form>
+					
+						
+					</div>
+					<div class="modal-footer border-0 justify-content-center">
+					<button type="button" class="btn" style="background-color: rgb(227, 227, 227);" data-bs-dismiss="modal">Cancel</button>
+					<button type="button" class="btn" style="background-color: #78c6a2;" data-bs-dismiss="modal">Accept</button>
+					</div>
+				</div>
+				</div>
+			</div>
 		<!--================================CALLOUT SECTION==========================================-->
 		
-		<section class="callout-section padding-top-100 padding-bottom-100 bgwhite">
+		<section class="callout-section padding-top-100 padding-bottom-100 margin-bottom-100 bgwhite">
 			<div class="container"><!-- section container -->
 				<div class="callout-wrapper">
 					<div class="callout-1">
@@ -356,20 +376,20 @@
 		
 		<!--================================LOCATION SECTION==========================================-->
 		
-		<section class="location-section padding-top-100 padding-bottom-20">
-			<div class="container"><!-- section container -->
-				<div class="section-title-wrap margin-bottom-50"><!-- section title -->
+		<!-- <section class="location-section padding-top-100 padding-bottom-20">
+			<div class="container">
+				<div class="section-title-wrap margin-bottom-50">
 					<h4>Explore<span>locations</span></h4>
 					<div class="title-divider">
 						<div class="line"></div>
-						<!-- <div class="box"></div> -->
+						
 						<div class="line"></div>
 					</div>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, accusamus.</p>
-				</div><!-- section title end -->
+				</div>
 				<div class="location-wrapper style1">
 					<div class="row">
-						<div class="col-md-8 col-sm-6 col-xs-12"><!--blog entry column-->
+						<div class="col-md-8 col-sm-6 col-xs-12">
 							<div class="location-entry">
 								<div class="figure">
 									<img src="images/location/01.jpg" alt="location"/>
@@ -384,8 +404,8 @@
 									</div>
 								</div>
 							</div>
-						</div><!--blog entry column end-->
-						<div class="col-md-4 col-sm-6 col-xs-12"><!--blog entry column-->
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="location-entry">
 								<div class="figure">
 									<img src="images/location/02.jpg" alt="location"/>
@@ -400,8 +420,8 @@
 									</div>
 								</div>
 							</div>
-						</div><!--blog entry column end-->
-						<div class="col-md-4 col-sm-6 col-xs-12"><!--blog entry column-->
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="location-entry">
 								<div class="figure">
 									<img src="images/location/03.jpg" alt="location"/>
@@ -416,8 +436,8 @@
 									</div>
 								</div>
 							</div>
-						</div><!--blog entry column end-->
-						<div class="col-md-8 col-sm-6 col-xs-12"><!--blog entry column-->
+						</div>
+						<div class="col-md-8 col-sm-6 col-xs-12">
 							<div class="location-entry">
 								<div class="figure">
 									<img src="images/location/04.jpg" alt="location"/>
@@ -432,11 +452,11 @@
 									</div>
 								</div>
 							</div>
-						</div><!--blog entry column end-->
+						</div>
 					</div>
 				</div>
-			</div><!-- section container end -->
-		</section>
+			</div>
+		</section> -->
 				
 		<!--================================ FOOTER AREA ==========================================-->
 		
@@ -449,7 +469,7 @@
 								<h5>About us</h5>
 							</div>
 							<div class="footer-logo">
-								<a href="#"><img src="images/logo1.png" alt="footer logo"></a>
+								<a href="#"><img src="images/logo2.png" alt="footer logo"></a>
 							</div>
 							<div class="footer-intro">
 								<p>Lorem ipsum dolor sit amet sectetuer

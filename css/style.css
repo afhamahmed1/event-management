@@ -360,7 +360,8 @@ a:focus {
 --------------------------------------------------------------------------------------------------------------------------------
 */
 .page-title-wrap{padding:0px 0 0px 0;}
-.pagetitle-text{float:left;}
+.pagetitle-text{float:center;}
+.pagetitle-text h3{text-align: center;}
 .pagetitle-text h4{}
 .pagetitle-breadcrumb{float:right;}
 .pagetitle-breadcrumb p{}
@@ -382,10 +383,44 @@ a:focus {
 .logo{ position: relative;
     top: 20%;
     transform: translateY(-20%);margin-top:-15px;}
-.smallogo img{margin:0 auto; display: block; width: 60px;}
+.smallogo img{margin:0 auto; display: block; width: 40px;}
 .nav-height2 .logo{margin-top:22px;}
 .logo a{display:inline-block;}
-.logo a img{margin:25px auto 0; width: 5rem;}
+.logo a img{margin:25px auto 0; width: 4rem;}
+
+
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	CHECKBOX 
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.checkbox-modal{
+	display: none;
+}
+
+.checkbox-modal .modal-header{justify-content: center;}
+.checkbox-modal .modal-body{padding: 20px;}
+
+.checkbox-modal .checks{
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+}
+
+.checkbox-modal p{ text-align: left;}
+
+.checkbox-modal .checks input{ accent-color: #78c6a2;}
+
+.checkbox-modal .checks a{margin-left: 10px;}
+
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	CHECKBOX  END
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
 
 
 
@@ -738,6 +773,7 @@ Login
 .category-section-wrap.cat-style-1{}
 .category-section-wrap.cat-style-2{}
 .category-section-wrap .cat-wrap{padding:34px 30px;margin-bottom:30px;}
+.category-section-wrap .cat-wrap .Parent-node{text-align: left; color: #444; font-size: 18px;}
 .category-section-wrap .cat-wrap h5{font-weight:400;letter-spacing:1px;text-align:left;position:relative;}
 .category-section-wrap .cat-wrap h5 i{position: absolute;right: 0;line-height: 24px;font-size: 24px;}
 .category-section-wrap .cat-wrap .cat-list-wrap{padding-top:13px;}
@@ -967,6 +1003,34 @@ Login
 .aside-layout-section .listview .item:nth-child(7),
 .aside-layout-section .listview .item:nth-child(8),
 .aside-layout-section .listview .item:nth-child(9){display:none;}
+
+
+	/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	EVENT-DETAILS
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.event-detail .event-discription{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.event-detail .event-discription p, h3, h5{
+	text-align: left;
+}
+
+	/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	EVENT-DETAILS-END
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
 
 /*
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -1559,6 +1623,55 @@ Login
     text-align: center;
 	cursor:pointer;
 	}
+
+	.profile-pic {
+		color: transparent;
+		transition: all 0.3s ease;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		transition: all 0.3s ease;
+		margin-bottom: 10px;
+   }
+	.profile-pic input {
+		display: none;
+   }
+	.profile-pic img {
+		position: absolute;
+		object-fit: cover;
+		width: 7rem;
+		height: 7rem;
+		box-shadow: 0 0 10px 0 rgba(255, 255, 255, .35);
+		border-radius: 100px;
+		z-index: 0;
+		max-width: 10px 0;
+   }
+	.profile-pic .-label {
+		cursor: pointer;
+		height: 7rem;
+		width: 7rem;
+   }
+	.profile-pic:hover .-label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, .8);
+		z-index: 10000;
+		color: #fafafa;
+		transition: background-color 0.2s ease-in-out;
+		border-radius: 100px;
+		margin-bottom: 0;
+   }
+	.profile-pic span {
+		display: inline-flex;
+		padding: 0.2em;
+		height: 2em;
+   }
+	
+	
+
+
 	
 /* subscription */
 
@@ -2036,10 +2149,8 @@ label.checkbox-lable{position:relative;top:-8px;color:#999;}
 .bottom-links p a{display:inline-block;margin-left:10px;color:#08c2f3;}
 
 .listing-form-social{margin-top:20px;}
-.listing-form-social ul{margin:0 -5px;text-align:left;}
+.listing-form-social ul{margin:0 -5px;text-align:center;}
 .listing-form-social ul li{display:inline-block;padding:0 3px;}
 .listing-form-social ul li a{width:40px;height:40px;line-height:40px;text-align:center;border-radius:4px;font-size:16px;}
 .listing-form-social ul li a i{}
-
-
 
