@@ -66,7 +66,7 @@
 		<div class="wsmenucontent overlapblackbg"></div>
 		<div class="wsmenuexpandermain slideRight">
 			<a id="navToggle" class="animated-arrow slideLeft"><span></span></a>
-			<a href="#" class="smallogo"><img src="images/logo2.png" width="120" alt="" /></a>
+			<a href="index.html" class="smallogo"><img src="images/logo2.png" width="120" alt="" /></a>
 		</div>
 		<!--================================HEADER==========================================-->
 		<div class="header">
@@ -124,7 +124,7 @@
 										
 									</ul> -->
 								</li>
-							  <li><a href="help.html">Help</a></li>
+							  <li><a href="FAQ.html">FAQ</a></li>
 							  <li><a href="Terms-of-Service.html">Terms of Service</a></li>
 							  <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
 
@@ -200,12 +200,12 @@
 							<h5>Child Interests</h5>
 							<div class="cat-list-wrap">
 								<ul class="cat-list">
+									<li><a href="interal-directory.html" id="print"></a></li>
 									<li><a href="interal-directory.html">Sports <span>(4)</span></a></li>
 									<li><a href="interal-directory.html">Music <span>(2)</span></a></li>
 									<li><a href="interal-directory.html">New year <span>(3)</span></a></li>
 									<li><a href="interal-directory.html">Olympic <span>(0)</span></a></li>
 									<li><a href="interal-directory.html">Car shows <span>(1)</span></a></li>
-									<li><a href="interal-directory.html">Other<span>(3)</span></a></li>
 									<li><a href="interal-directory.html">Other<span>(3)</span></a></li>
 									<li><a href="interal-directory.html">Other<span>(3)</span></a></li>
 									<li><a href="interal-directory.html">Other<span>(3)</span></a></li>
@@ -235,19 +235,17 @@
 				<div class="modal-body">
 				
 					<form> 
-						<input class="w-100 border-0 p-3 my-2" style="background: #f2f2f3;" type="text" placeholder="Add new Interest">
+						<input id="add" class="w-100 border-0 p-3 my-2" style="background: #f2f2f3;" type="text" placeholder="Add new Interest">
 					</form>
 					
 				</div>
 				<div class="modal-footer border-0 justify-content-center">
-				<button type="button" class="btn w-100" data-bs-dismiss="modal" style="background-color: #78c6a2;">Add</button>
+				<button onclick="newDirectory()" type="button" class="btn w-100" data-bs-dismiss="modal" style="background-color: #78c6a2;">Add</button>
 				</div>
 			</div>
 			</div>
 		</div>
 		
-		<!--================================ subscription ==========================================-->
-	
 		<!--================================ FOOTER AREA ==========================================-->
 		
 		<footer class="footer style-1 padding-top-70 bg222">
@@ -259,7 +257,7 @@
 								<h5>About us</h5>
 							</div>
 							<div class="footer-logo">
-								<a href="#"><img src="images/logo2.png" alt="footer logo"></a>
+								<a href="index.html"><img src="images/logo2.png" alt="footer logo"></a>
 							</div>
 							<div class="footer-intro">
 								<p>Lorem ipsum dolor sit amet sectetuer
@@ -281,7 +279,7 @@
 								<li><a href="Directory.html">Directory</a></li>
 								<li><a href="Interests.html">Interests</a></li>
 								<li><a href="event.html">Events</a>
-								<li><a href="help.html">Help</a></li>
+								<li><a href="FAQ.html">FAQ</a></li>
 								<li><a href="Terms-of-Service.html">Terms of Service</a></li>
 								<li><a href="Privacy-Policy.html">Privacy Policy</a></li>
 							</ul>
@@ -308,6 +306,14 @@
 			</div><!-- .container end -->
 		</footer>
 	</div>
+
+	<script>
+		function newDirectory(){
+			let add = document.getElementById("add").value;
+			
+			document.getElementById("print").innerHTML = add;
+		}
+	</script>
 	
 	<!--================================JQuery===========================================-->
         

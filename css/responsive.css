@@ -504,7 +504,7 @@
 	.rg-thumbs {top: 260px !important;}
 	.location-entry .figure img {width:100%;}
 	.es-carousel ul{margin:0 auto !important;}
-	.owl-controls { right: 0;top: -44px;}
+	.owl-controls { right: 10;top: -110px;}
 }
 @media only screen and (min-width: 321px) and (max-width: 480px){
 	.error-404 h1 span { font-size: 150px;}
@@ -580,7 +580,7 @@
 	h5{font-size:16px;}
 	h6{font-size:14px;}
 	a,p,span{font-size:12px;}
-	.owl-controls { right: 0;top: -44px;}
+	.owl-controls { right: 10;top: -110px;}
 	.subscribe-form {padding-right: 0;}
 	.subscribe-form .subs-field {width: 54%;}
 	.subscribe-form .subs-btn {width: 44%;}
