@@ -57,7 +57,23 @@
 	<!--================================SLIDER REVOLUTION =========================================-->
 	
 	<link rel="stylesheet" type="text/css" href="assets/revolution_slider/css/revslider.css" media="screen" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		// console.log('this is button');
+		$("#open").show();
+		// $("#checkbox-modal").add("modal");
+		$("#cancels").on("click",function(){
+			$("#open").hide();
+		});
+		$("#accept").on("click",function(){
+			$("#open").hide();
+		});
 		
+	});
+</script>
+
 </head>
 <body>
 	<div class="preloader"><span class="preloader-gif"></span></div>
@@ -66,7 +82,7 @@
 		<div class="wsmenucontent overlapblackbg"></div>
 		<div class="wsmenuexpandermain slideRight">
 			<a id="navToggle" class="animated-arrow slideLeft"><span></span></a>
-			<a href="#" class="smallogo"><img class="logo" src="images/logo1.png" width="200" alt="" /></a>
+			<a href="#" class="smallogo"><img class="logo" src="images/logo2.png" width="200" alt="" /></a>
 		</div>
 		<!--================================HEADER==========================================-->
 		<div class="header">
@@ -81,7 +97,7 @@
 						<nav class="wsmenu slideLeft clearfix">
 							<div class="logo pull-left">
 								<a href="index.html" title="Responsive Slide Menus">
-									<img src="images/logo1.png" alt="" />
+									<img src="images/logo2.png" alt="">
 								</a>
 							</div>
 							<ul class="mobile-sub wsmenu-list pull-right">
@@ -90,7 +106,7 @@
 								<li ><a href="Directory.html">Directory</a></li>
 								<li class="loggedin"><a href="Interests.html">Interests</a></li>
 								<li class="loggedin"><a href="event.html">Events</a></li>
-								<li class="loggedin"><a href="help.html">Help</a></li>
+								<li class="loggedin"><a href="help.html">FAQ</a></li>
 								<li class="loggedin"><a href="Terms-of-Service.html">Terms of Service</a></li>
 								<li class="loggedin"><a href="Privacy-Policy.html">Privacy Policy</a></li>
 
@@ -277,34 +293,45 @@
 				</section>
 				
 
+		<div class="modal checkbox-modal" tabindex="-1"  data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" data-bs-keyboard="false" id="open" >
+			<div   class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title text-center">Custom Checkboxes</h4>
+				</div>
+
+				<div class="modal-body">
+
+					<p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam obcaecati error aut explicabo voluptate tempore non, eligendi cum blanditiis ratione facere dolores sapiente sunt doloremque corporis iusto odit. Tenetur reprehenderit aspernatur dignissimos, suscipit maxime velit ex nihil minima voluptatem earum commodi rem voluptas expedita natus nesciunt magnam voluptatum omnis repellendus tempore voluptates vel quisquam obcaecati excepturi minus. Voluptas, quidem! Perferendis earum voluptates laborum libero ea natus vel debitis nam molestias repudiandae maxime autem adipisci aliquam pariatur facere, iusto inventore commodi ipsam mollitia nobis porro quam. Sed molestias debitis ullam eum neque recusandae explicabo, provident, blanditiis excepturi dolorum, id error repellendus!</p>
 
 
-				<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-	Launch static backdrop modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<form>
+
+						<div class="checks d-flex mb-2">
+							<input type="checkbox" required>
+							<a href="Terms-of-Service.html" style="margin-left: 10px;">Terms of Service</a>
+						</div>
+
+						<div class="checks d-flex">
+							<input type="checkbox" required>
+							<a href="Privacy-Policy.html" style="margin-left: 10px;">Privacy-Policy</a>
+						</div>
+						
+					</form>
+				
+					
+				</div>
+				<div class="modal-footer border-0 justify-content-center">
+				<button type="button" class="btn" style="background-color: rgb(227, 227, 227);" data-bs-dismiss="modal" id="cancels">Cancel</button>
+				<button type="button" class="btn" style="background-color: #78c6a2;" data-bs-dismiss="modal" id="accept">Accept</button>
+				</div>
+			</div>
+			</div>
 		</div>
-		<div class="modal-body">
-		  ...
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-primary">Understood</button>
-		</div>
-	  </div>
-	</div>
-  </div>
 		<!--================================CALLOUT SECTION==========================================-->
 		
-		<section class="callout-section padding-top-100 padding-bottom-100 bgwhite">
+		<section class="callout-section padding-top-100 padding-bottom-100 bgwhite margin-bottom-70">
 			<div class="container"><!-- section container -->
 				<div class="callout-wrapper">
 					<div class="callout-1">
@@ -323,87 +350,7 @@
 		
 		<!--================================LOCATION SECTION==========================================-->
 		
-		<section class="location-section padding-top-100 padding-bottom-20">
-			<div class="container"><!-- section container -->
-				<div class="section-title-wrap margin-bottom-50"><!-- section title -->
-					<h4>Explore<span>locations</span></h4>
-					<div class="title-divider">
-						<div class="line"></div>
-						<!-- <div class="box"></div> -->
-						<div class="line"></div>
-					</div>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, accusamus.</p>
-				</div><!-- section title end -->
-				<div class="location-wrapper style1">
-					<div class="row">
-						<div class="col-md-8 col-sm-6 col-xs-12"><!--blog entry column-->
-							<div class="location-entry">
-								<div class="figure">
-									<img src="images/location/01.jpg" alt="location"/>
-									<div class="hover-overlay"><div class="hover-overlay-inner"></div></div>
-									<div class="location-content-1 clearfix">
-										<div class="location-icon">
-											<i class="fa fa-map-marker bgyallow-1 white"></i>
-										</div>
-										<div class="location-title-disc">
-											<h5><a href="#">new york city</a></h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div><!--blog entry column end-->
-						<div class="col-md-4 col-sm-6 col-xs-12"><!--blog entry column-->
-							<div class="location-entry">
-								<div class="figure">
-									<img src="images/location/02.jpg" alt="location"/>
-									<div class="hover-overlay"><div class="hover-overlay-inner"></div></div>
-									<div class="location-content-1 clearfix">
-										<div class="location-icon">
-											<i class="fa fa-map-marker bgyallow-1 white"></i>
-										</div>
-										<div class="location-title-disc">
-											<h5><a href="#">new york city</a></h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div><!--blog entry column end-->
-						<div class="col-md-4 col-sm-6 col-xs-12"><!--blog entry column-->
-							<div class="location-entry">
-								<div class="figure">
-									<img src="images/location/03.jpg" alt="location"/>
-									<div class="hover-overlay"><div class="hover-overlay-inner"></div></div>
-									<div class="location-content-1 clearfix">
-										<div class="location-icon">
-											<i class="fa fa-map-marker bgyallow-1 white"></i>
-										</div>
-										<div class="location-title-disc">
-											<h5><a href="#">new york city</a></h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div><!--blog entry column end-->
-						<div class="col-md-8 col-sm-6 col-xs-12"><!--blog entry column-->
-							<div class="location-entry">
-								<div class="figure">
-									<img src="images/location/04.jpg" alt="location"/>
-									<div class="hover-overlay"><div class="hover-overlay-inner"></div></div>
-									<div class="location-content-1 clearfix">
-										<div class="location-icon">
-											<i class="fa fa-map-marker bgyallow-1 white"></i>
-										</div>
-										<div class="location-title-disc">
-											<h5><a href="#">new york city</a></h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div><!--blog entry column end-->
-					</div>
-				</div>
-			</div><!-- section container end -->
-		</section>
+	
 				
 		<!--================================ FOOTER AREA ==========================================-->
 		
@@ -416,7 +363,7 @@
 								<h5>About us</h5>
 							</div>
 							<div class="footer-logo">
-								<a href="#"><img src="images/logo1.png" alt="footer logo"></a>
+								<a href="#"><img src="images/logo2.png" alt="footer logo"></a>
 							</div>
 							<div class="footer-intro">
 								<p>Lorem ipsum dolor sit amet sectetuer
@@ -438,7 +385,7 @@
 								<li><a href="Directory.html">Directory</a></li>
 								<li><a href="Interests.html">Interests</a></li>
 								<li><a href="event.html">Events</a>
-								<li><a href="help.html">Help</a></li>
+								<li><a href="help.html">FAQ</a></li>
 								<li><a href="Terms-of-Service.html">Terms of Service</a></li>
 								<li><a href="Privacy-Policy.html">Privacy Policy</a></li>
 							</ul>

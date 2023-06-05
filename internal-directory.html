@@ -35,6 +35,7 @@
     <!--================================BOOTSTRAP STYLE SHEETS================================-->
         
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 	
     <!--================================ Main STYLE SHEETs====================================-->
 	
@@ -66,22 +67,22 @@
 		<div class="wsmenucontent overlapblackbg"></div>
 		<div class="wsmenuexpandermain slideRight">
 			<a id="navToggle" class="animated-arrow slideLeft"><span></span></a>
-			<a href="#" class="smallogo"><img src="images/logo2.png" alt=""></a>
+			<a href="#" class="smallogo"><img src="images/logo2.png" width="120" alt="" /></a>
 		</div>
 		<!--================================HEADER==========================================-->
-		<div class="header">
+		<div class="header solid">
 			<div class="header-inner">
 				
 				<div class="nav-wrapper"><!--main navigation-->
 					<div class="container">
 						<div class="top-toolbar"><!--header toolbar-->
 					
-					</div><!--header toolbar end-->
+				</div><!--header toolbar end-->
 						<!--Main Menu HTML Code-->
 						<nav class="wsmenu slideLeft clearfix">
 							<div class="logo pull-left">
 								<a href="index.html" title="Responsive Slide Menus">
-									<img src="images/logo2.png" alt="">
+									<img src="images/logo2.png" alt="" />
 								</a>
 							</div>
 							<ul class="mobile-sub wsmenu-list pull-right">
@@ -109,22 +110,104 @@
 				</div><!--main navigation end-->
 			</div>
 		</div><!-- header end -->
-		
 		<!--================================PAGE TITLE==========================================-->
 		<!--================================PAGE TITLE==========================================-->
 		<div class="page-title-wrap padding-top-30 padding-bottom-30 margin-bottom-100"><!-- section title -->
-			<div class="container">
-				<div class="pagetitle-text">
-					<h3 class="white">Privacy-Policy</h3>
-				</div>
-				<div class="pagetitle-breadcrumb">
-					
-				</div>
-			</div>
-		</div><!-- section title end -->
-		<!--================================PRICING PLAN SECTION 2==========================================-->
-	</div>
-	<!--================================ FOOTER AREA ==========================================-->
+            <div class="container">
+                <div class="pagetitle-text">
+                    <h3 class="white">Internal directory</h3>
+                </div>
+            </div>
+        </div><!-- section title end -->
+    <!--================================CATEGOTY SECTION==========================================-->
+    <section class="categories-section ">
+        <div class="container"><!-- section container -->
+            <div class="row category-section-wrap cat-style-2">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <form style="display: flex; justify-content: end;">
+                            <input type="text" placeholder="Search" class="p-3 mb-5 rounded border-0 justify-content-end" style="background-color: #f2f2f3;">
+                            <button class="p-3 mb-5 border-0 justify-content-end" style="background-color: #78c6a2;">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div><!-- section container end -->
+    </section>
+    <section class="categories-section ">
+        <div class="container"><!-- section container -->
+            <div class="row category-section-wrap cat-style-2">
+                <div class="col-md-12 col-sm-12 col-xs-12"><!-- category column -->
+                    <div class="cat-wrap shadow-1" style="background-color: #c0e8d6;">
+                        <a href="Directory.html" class="Parent-node">Parent Interests </a>
+                        
+                    </div>
+                </div><!-- category column end -->
+                
+            </div>
+        </div><!-- section container end -->
+    </section>
+    <section class="categories-section ">
+        <div class="container"><!-- section container -->
+            <div class="row category-section-wrap cat-style-2">
+                <div class="col-md-12 col-sm-12 col-xs-12"><!-- category column -->
+                    <div class="cat-wrap shadow-1">
+                        <h5>Sports</h5>
+                        
+                    </div>
+                </div><!-- category column end -->
+                
+            </div>
+        </div><!-- section container end -->
+    </section>
+    <section class="categories-section padding-bottom-40">
+        <div class="container"><!-- section container -->
+            <div class="row category-section-wrap cat-style-2">
+                <div class="col-md-12 col-sm-12 col-xs-12"><!-- category column -->
+                    <div class="cat-wrap shadow-1" style="overflow-x: scroll; height: 23.5rem;">
+                        <h5>Child Interests</h5>
+                        <div class="cat-list-wrap">
+                            <ul class="cat-list">
+                                <li><a href="event-details.html" id="print"></a></li>
+                                <li><a href="event-details.html">Cricket <span>(4)</span></a></li>
+                                <li><a href="event-details.html">Footbal <span>(2)</span></a></li>
+                                <li><a href="event-details.html">Swimming <span>(3)</span></a></li>
+                                <li><a href="event-details.html">Basketball <span>(0)</span></a></li>
+                                <li><a href="event-details.html">Hockey <span>(1)</span></a></li>
+                                <li><a href="event-details.html">Boxing<span>(3)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p data-bs-toggle="modal" data-bs-target="#addinterest" class="text-start" style="cursor: pointer;">Add new Interest</p>
+                </div><!-- category column end -->
+                
+            </div>
+        </div><!-- section container end -->
+    </section>
+
+    <!-- Modal -->
+    <div class="new-interest modal fade" id="addinterest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Add new Interest</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                <form> 
+                    <input id="add" class="w-100 border-0 p-3 my-2" style="background: #f2f2f3;" type="text" placeholder="Add new Interest">
+                </form>
+                
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+            <button onclick="newDirectory()" type="button" class="btn w-100" data-bs-dismiss="modal" style="background-color: #78c6a2;">Add</button>
+            </div>
+        </div>
+        </div>
+    </div>
+		
+		<!--================================ FOOTER AREA ==========================================-->
 		
 		<footer class="footer style-1 padding-top-70 bg222">
 			<div class="container">
@@ -135,7 +218,7 @@
 								<h5>About us</h5>
 							</div>
 							<div class="footer-logo">
-								<a href="#"><img src="images/logo2.png" alt=""></a>
+								<a href="#"><img src="images/logo2.png" alt="footer logo"></a>
 							</div>
 							<div class="footer-intro">
 								<p>Lorem ipsum dolor sit amet sectetuer
@@ -184,15 +267,15 @@
 			</div><!-- .container end -->
 		</footer>
 	</div>
-	
 
 	<script>
-		var loadFile = function (event) {
-		var image = document.getElementById("output");
-		image.src = URL.createObjectURL(event.target.files[0]);
-		};
-
+		function newDirectory(){
+			let add = document.getElementById("add").value;
+			
+			document.getElementById("print").innerHTML = add;
+		}
 	</script>
+	
 	<!--================================JQuery===========================================-->
         
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -202,8 +285,8 @@
 	
 	<!--================================BOOTSTRAP===========================================-->
         
-	<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	
 	
 	<!--================================NAVIGATION===========================================-->
 	

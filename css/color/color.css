@@ -25,11 +25,12 @@ body{background:#F9F9F9;}
 .page-title-wrap{
 	/* background:url(../../images/page-title-bg.jpg) no-repeat; */
 
-	background: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)),
-	url('../images/mountain.jpg') no-repeat;
+	background: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)),url(../../images/mountain.jpg) no-repeat;
 	height: 50vh;
 	display: flex;
 	align-items: center;
+	background-position: center;
+    background-size: cover;
 }
 
 .pagetitle-text{}
