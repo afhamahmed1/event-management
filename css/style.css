@@ -2189,13 +2189,21 @@ label.checkbox-lable{position:relative;top:-8px;color:#999;}
     right: 0;
 }
 
-.container{
+.interest .container{
     display: flex;
     justify-content: space-between;
     /* padding: 13px 5%; */
 
 }
-.right-event h4, p, a {
+.right-event h4 {
+	text-align: left;
+}
+
+.right-event p {
+	text-align: left;
+}
+
+.right-event a {
 	text-align: left;
 }
 
@@ -2554,7 +2562,6 @@ label.checkbox-lable{position:relative;top:-8px;color:#999;}
 .footer{
     text-align: center;
     color: #9a9a9a;
-    padding: 10px 0 20px;
     font-size: 13px;
 
 }
