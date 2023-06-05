@@ -449,7 +449,7 @@ body{background:#F9F9F9;}
 
 
 	background: linear-gradient(rgba(4, 9, 30, 0.555), rgba(4, 9, 30, 0.555)),
-	url('/images/mountain.jpg') no-repeat;
+	url('../../images/mountain.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
 
