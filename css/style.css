@@ -987,7 +987,6 @@ Login
 
 /* list view styling */
 
-.listview .item{width:;}
 .listview .listing-item{padding:20px;}
 .listview .listing-item .figure {max-width: 270px;float:left;}
 .listview .three-column .listing-item .figure {max-width: 370px;}
@@ -1350,7 +1349,7 @@ Login
 .sidebar .sidebar-listing-search-wrap{}
 .sidebar .sidebar-listing-search-wrap form p{text-align:left;margin-top:18px;}
 .sidebar .sidebar-listing-search-wrap form p a{text-align:left;}
-.sidebar .sidebar-listing-search-wrap form p:first-child{0margin-top:0;}
+.sidebar .sidebar-listing-search-wrap form p:first-child{margin-top:0;}
 .sidebar .sidebar-listing-search-wrap form{}
 .sidebar .sidebar-listing-search-wrap form input.sidebar-listing-search-input{padding: 15px 20px;width: 100%;border:none;margin-bottom:7px;margin-top:7px;}
 .sidebar .sidebar-listing-search-wrap form select.sidebar-listing-search-select{border:none;width: 90%;}
@@ -1721,7 +1720,7 @@ Login
 .infobox-wrap .infobox-content h5{text-align:left;}
 .infobox-wrap .infobox-content .address p{text-align:left;}
 .infobox-wrap .infobox-rattings{margin:10px 0 15px;}
-.infobox-wrap .infobox-rattings i{margin-right;2px;}
+.infobox-wrap .infobox-rattings i{margin-right:2px;}
 
 
 /*
@@ -1943,9 +1942,9 @@ Login
 .entry-wrap .entry-content .entry-readmore a{display:inline-block;padding:10px 35px;border-radius:25px;}
 
 .comments-main-title{}
-.comments-main-title h5{font-weight:400;letter-spacing;2px;}
+.comments-main-title h5{font-weight:400;letter-spacing:2px;}
 .comments-main-title p{margin-top:5px;}
-.comment-author-name h5{font-weight:400;letter-spacing;2px;}
+.comment-author-name h5{font-weight:400;letter-spacing:2px;}
 .comment-content{padding:0 0 0 30px;}
 .comment-content .reply{position:absolute;right:15px;top:0;}
 .comments ul li{margin-top:30px;}
@@ -3059,5 +3058,4 @@ body {
     z-index: 999;
   }
   
-  /* Rest of the CSS styles remain the same as provided previously */
-    z   
+  
