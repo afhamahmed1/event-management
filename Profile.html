@@ -66,7 +66,7 @@
 		<div class="wsmenucontent overlapblackbg"></div>
 		<div class="wsmenuexpandermain slideRight">
 			<a id="navToggle" class="animated-arrow slideLeft"><span></span></a>
-			<a href="#" class="smallogo"><img class="logo" src="images/logo1.png" width="120" alt="" /></a>
+			<a href="#" class="smallogo"><img src="images/logo2.png" alt=""></a>
 		</div>
 		<!--================================HEADER==========================================-->
 		<div class="header">
@@ -75,66 +75,34 @@
 				<div class="nav-wrapper"><!--main navigation-->
 					<div class="container">
 						<div class="top-toolbar"><!--header toolbar-->
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12 pull-right">
-								<!-- <div class="top-contact-info">
-									<ul>
-										<li class="toolbar-email"><i class="fa fa-envelope-o"></i> hr@softwarebyte.co</li>
-										<li class="toolbar-contact"><i class="fa fa-phone"></i> +1 (210) 551-0838</li>
-										
-									</ul>
-								</div> -->
-								<div class="social-content">
-									<!-- <ul class="social-links">
-										<li><a class="linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-										<li><a class="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-										<li><a class="facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-										<li><a class="youtube" href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
-										<li><button class = "login" data-toggle = "modal" data-target = "#login">login</button></li>
-										<li><button class = "register" data-toggle = "modal" data-target = "#register">register</button></li>
-									</ul> -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div><!--header toolbar end-->
+					
+					</div><!--header toolbar end-->
 						<!--Main Menu HTML Code-->
 						<nav class="wsmenu slideLeft clearfix">
-							<div class="logo pull-left"><a href="index.html" title="Responsive Slide Menus"><img src="images/logo1.png" alt="" /></a></div>
+							<div class="logo pull-left">
+								<a href="index.html" title="Responsive Slide Menus">
+									<img src="images/logo2.png" alt="">
+								</a>
+							</div>
 							<ul class="mobile-sub wsmenu-list pull-right">
-								<li><a href="index.html" class="">Home</a>
-									<!-- <ul class="wsmenu-submenu">
-										<li><a href="index.html">Home 1</a></li>
-										<li><a href="index-2.html">Home 2</a></li>
-										<li><a href="index-3.html">Home 3</a></li>
-										<li><a href="index-4.html">Home 4</a></li>
-									</ul> -->
-								</li>
-								<li><a href="Profile.html" class="">Profile</a></li>
-								<li><a href="Directory.html">Directory</a></li>
-								<li><a href="Interests.html">Interests</a></li>
-								<li><a href="event.html">Events</a>
-									<!-- <ul class="wsmenu-submenu">
-										<li><a href="about.html">About</a></li>
-										<li><a href="blog.html">Blog</a></li>
-										<li><a href="single.html">Blog Single</a></li>
-										<li><a href="single-listing.html">listing Single</a></li>
-										<li><a href="404.html">Error 404</a></li>
-										
-									</ul> -->
-								</li>
-							  <li><a href="help.html">Help</a></li>
-							  <li><a href="Terms-of-Service.html">Terms of Service</a></li>
-							  <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+								<li class="loggedin"><a href="index.html" class="">Home</a></li>
+								<li class="loggedin"><a href="Profile.html" class="">Profile</a></li>
+								<li ><a href="Directory.html">Directory</a></li>
+								<li class="loggedin"><a href="Interests.html">Interests</a></li>
+								<li class="loggedin"><a href="event.html">Events</a></li>
+								<li class="loggedin"><a href="help.html">FAQ</a></li>
+								<li class="loggedin"><a href="Terms-of-Service.html">Terms of Service</a></li>
+								<li class="loggedin"><a href="Privacy-Policy.html">Privacy Policy</a></li>
 
-							  <li><a href="event.html">Login</a>
-								<ul class="wsmenu-submenu">
-									<li><a href="about.html">Login</a></li>
-									<li><a href="blog.html">Sign up</a></li>
-								</ul>
-							</li>
-							  <!-- <li><a class="toolbar-new-listing" href="#"> Add Listing</a></li> -->
+							  	<li id="login-register"><a role="button">Login</a>
+									<ul class="wsmenu-submenu">
+										<li id="login-button"><a href="login.html">Login</a></li>
+										<li id="signup-button"><a href="sign-up.html">Sign up</a></li>
+										
+									</ul>
+								</li>
+								<li class="loggedin" id="logout-button" ><a role="button">Logout</a></li>
+							  
 							</ul>
 						</nav>
 					</div>
@@ -143,111 +111,120 @@
 		</div><!-- header end -->
 		
 		<!--================================PAGE TITLE==========================================-->
-			<div class="page-title-wrap padding-top-30 padding-bottom-30 margin-bottom-100"><!-- section title -->
-				<div class="container">
-					<div class="pagetitle-text">
-						<h3 class="white">Proflie</h3>
-					</div>
-					<div class="pagetitle-breadcrumb">
-						
+		<!--================================PAGE TITLE==========================================-->
+		<div class="page-title-wrap padding-top-30 padding-bottom-30 margin-bottom-100"><!-- section title -->
+			<div class="container">
+				<div class="pagetitle-text">
+					<h3 class="white">Proflie</h3>
+				</div>
+				<div class="pagetitle-breadcrumb">
+					
+				</div>
+			</div>
+		</div><!-- section title end -->
+		<!--================================PRICING PLAN SECTION 2==========================================-->
+	</div>
+		<!--================================CONTACT===========================================-->
+		<section id="contact-form" class="margin-top-0 margin-bottom-40">
+			<div class="container">
+				<div class="row info-box-wrap clearfix">
+
+				<div class="profile-setting col-lg-8 mx-auto">
+					<div class="contact-form-wrap margin-top-0"><!--.contact-form-wrap -->
+						<div id="contact_form" class="row contact-form"><!-- .row .contact-form -->
+
+							<!-- <div class="Profile-img">
+								<img src="images/01.png">
+								<label>Change image</label>
+							</div> -->
+
+							<div class="profile-pic">
+								<label class="-label" for="file">
+								  <span class="glyphicon glyphicon-camera"></span>
+								  <span>Change Image</span>
+								</label>
+								<input class="change-img" id="file" type="file" onchange="loadFile(event)"/>
+								<img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output" width="200" />
+							  </div>
+							
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
+								<input class="input-field" type="text" placeholder="FIRST NAME" name="fname" required="required">
+							</div><!-- form-field  end-->
+
+
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
+								<input class="input-field" type="time" placeholder="Date of birth" required="required">
+							</div><!-- form-field  end-->
+
+
+							<div class="form-floating">
+								<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+								  <option selected>Gender</option>
+								  <option value="1">Male</option>
+								  <option value="2">Female</option>
+								  <option value="3">Other</option>
+								</select>
+							</div><!-- form-field  end-->
+
+
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
+								<input class="input-field" type="email" placeholder="Email" name="website" required="required">
+							</div><!-- form-field  end-->
+
+
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-5">
+								<section id="google-map">
+									<div class="container-fluid">
+										<!-- <div id="map"></div> -->
+										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23482.75171568265!2d-74.0063924450553!3d40.71617620879897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1685790482040!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+								</section>	
+							</div>
+
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
+								<input class="input-field" type="email" placeholder="Insert range" name="website" required="required">
+							</div><!-- form-field  end-->
+					
+
+
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-btn -->
+								<input class="contact-btn bgblue-1" type="submit" value="Update" id="submit_btn">
+							</div><!-- form-btn  end-->
+
+
+							<div id="contact_results"></div>
+						</div><!-- .row .contact-form end -->
 					</div>
 				</div>
-			</div><!-- section title end -->
-			<!--================================PRICING PLAN SECTION 2==========================================-->
-		</div>
-
-
-			<!--================================CONTACT===========================================-->
-			<section id="contact-form" class="margin-top-70 margin-bottom-40">
-				<div class="container">
-					<div class="row info-box-wrap clearfix">
-
-					<div class="profile-setting col-lg-8 mx-auto">
-						<div class="contact-form-wrap margin-top-30"><!--.contact-form-wrap -->
-							<div id="contact_form" class="row contact-form"><!-- .row .contact-form -->
-
-								<div class="Profile-img">
-									<img src="images/01.png">
-									<label>Change image</label>
-								</div>		
-								
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
-									<input class="input-field" type="text" placeholder="FIRST NAME" name="fname" required="required">
-								</div><!-- form-field  end-->
-	
-	
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
-									<input class="input-field" type="time" placeholder="Date of birth" required="required">
-								</div><!-- form-field  end-->
-	
-	
-								<div class="form-floating">
-									<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-									  <option selected>Gender</option>
-									  <option value="1">Male</option>
-									  <option value="2">Female</option>
-									  <option value="3">Other</option>
-									</select>
-								</div><!-- form-field  end-->
-	
-	
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
-									<input class="input-field" type="email" placeholder="Email" name="website" required="required">
-								</div><!-- form-field  end-->
-	
-
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-5">
-									<section id="google-map">
-										<div class="container-fluid">
-											<!-- <div id="map"></div> -->
-											<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23482.75171568265!2d-74.0063924450553!3d40.71617620879897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1685790482040!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-										</div>
-									</section>	
-								</div>
-
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-field -->
-									<input class="input-field" type="email" placeholder="Insert range" name="website" required="required">
-								</div><!-- form-field  end-->
-						
-	
-	
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><!-- form-btn -->
-									<input class="contact-btn bgblue-1" type="submit" value="SUBMIT MESSAGE" id="submit_btn">
-								</div><!-- form-btn  end-->
-	
-	
-								<div id="contact_results"></div>
-							</div><!-- .row .contact-form end -->
-						</div>
-					</div>
-						
-				
-					</div><!-- .row .info-box-wrap end -->
 					
-					<!--<div class="contact-form-wrap margin-top-30">
-						<form class="row contact-form mailchimp">
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-								<input class="input-field" type="text" placeholder="FIRST NAME" name="fname">
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-								<input class="input-field" type="text" placeholder="LAST NAME" name="lname">
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-								<input class="input-field" type="text" placeholder="EMAIL ADDRESS" name="email">
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-								<input class="input-field" type="text" placeholder="WEBSITE" name="website">
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<textarea class="input-field" type="text" placeholder="MESSAGE" name="message"></textarea>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right">
-								<input class="contact-btn bgblue-1" type="text" value="SUBMIT MESSAGE">
-							</div>
-						</form>
-					</div>-->
-				</div><!-- container end -->
-			</section>
+			
+				</div><!-- .row .info-box-wrap end -->
+				
+				<!--<div class="contact-form-wrap margin-top-30">
+					<form class="row contact-form mailchimp">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<input class="input-field" type="text" placeholder="FIRST NAME" name="fname">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<input class="input-field" type="text" placeholder="LAST NAME" name="lname">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<input class="input-field" type="text" placeholder="EMAIL ADDRESS" name="email">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<input class="input-field" type="text" placeholder="WEBSITE" name="website">
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<textarea class="input-field" type="text" placeholder="MESSAGE" name="message"></textarea>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right">
+							<input class="contact-btn bgblue-1" type="text" value="SUBMIT MESSAGE">
+						</div>
+					</form>
+				</div>-->
+			</div><!-- container end -->
+		</section>
+		
 			
 			<!--================================MAP SECTION==========================================-->
 			
@@ -268,7 +245,7 @@
 								<h5>About us</h5>
 							</div>
 							<div class="footer-logo">
-								<a href="#"><img src="images/logo1.png" alt="footer logo"></a>
+								<a href="#"><img src="images/logo2.png" alt=""></a>
 							</div>
 							<div class="footer-intro">
 								<p>Lorem ipsum dolor sit amet sectetuer
@@ -290,7 +267,7 @@
 								<li><a href="Directory.html">Directory</a></li>
 								<li><a href="Interests.html">Interests</a></li>
 								<li><a href="event.html">Events</a>
-								<li><a href="help.html">Help</a></li>
+								<li><a href="help.html">FAQ</a></li>
 								<li><a href="Terms-of-Service.html">Terms of Service</a></li>
 								<li><a href="Privacy-Policy.html">Privacy Policy</a></li>
 							</ul>
@@ -318,6 +295,14 @@
 		</footer>
 	</div>
 	
+
+	<script>
+		var loadFile = function (event) {
+		var image = document.getElementById("output");
+		image.src = URL.createObjectURL(event.target.files[0]);
+		};
+
+	</script>
 	<!--================================JQuery===========================================-->
         
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
